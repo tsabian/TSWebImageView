@@ -8,7 +8,7 @@
 import UIKit
 
 public final class TSWebImageView: UIImageView {
-    
+
     // MARK: - Cache
     fileprivate static var ramImageCache = NSCache<NSURL, UIImage>()
     static subscript(url: URL) -> UIImage? {
@@ -29,7 +29,7 @@ public final class TSWebImageView: UIImageView {
             }
         }
     }
-    
+
     // MARK: - Inspectable
     @IBInspectable
     var webURLstring: String? {
@@ -40,11 +40,10 @@ public final class TSWebImageView: UIImageView {
             webURL = url
         }
     }
-    
-    // MARK: - properties
-    private var webURL: URL?
-    
 
-    
-    
+    // MARK: - properties
+    private var webURL: URL? {
+        didSet {
+        }
+    }
 }
