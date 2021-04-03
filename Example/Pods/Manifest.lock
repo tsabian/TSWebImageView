@@ -1,0 +1,16 @@
+PODS:
+  - TSWebImageView (0.1.0)
+
+DEPENDENCIES:
+  - TSWebImageView (from `../`)
+
+EXTERNAL SOURCES:
+  TSWebImageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TSWebImageView: af0f6e92d9e69d4262fe46e1356ad27477ed2690
+
+PODFILE CHECKSUM: 10117d1401d48d6f1c197a38ea9184a04cde56b5
+
+COCOAPODS: 1.10.1
