@@ -44,6 +44,22 @@ public final class TSWebImageView: UIImageView {
     // MARK: - properties
     private var webURL: URL? {
         didSet {
+            guard let url = webURL else {
+                return
+            }
+            if let imageCached = TSWebImageView[url] {
+                image = imageCached
+            } else {
+                DispatchQueue.global().async {
+                    if let imageData = try? Data(contentsOf: url), let downloaded = UIImage(data: imageData) {
+                        DispatchQueue.main.async {
+                            self.image = downloaded
+                            TSWebImageView[url] = downloaded
+                        }
+                    }
+                }
+            }
         }
     }
+    
 }
