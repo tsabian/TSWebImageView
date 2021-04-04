@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +19,69 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bPH-NU-bQf">
+                                <rect key="frame" x="16" y="243.5" width="343" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="oIo-1g-UHh"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pnQ-G3-9Hg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbA-aP-rKP">
+                                <rect key="frame" x="16" y="573" width="169" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bb9-sk-Crl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapReload:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W6d-7v-sJ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frf-bl-1Qu">
+                                <rect key="frame" x="190.5" y="573" width="168.5" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapClear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pZZ-Os-VoM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bPH-NU-bQf" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="1KJ-km-u1S"/>
+                            <constraint firstAttribute="trailing" secondItem="frf-bl-1Qu" secondAttribute="trailing" constant="16" id="51u-HU-Y7a"/>
+                            <constraint firstItem="frf-bl-1Qu" firstAttribute="centerY" secondItem="bbA-aP-rKP" secondAttribute="centerY" id="647-X1-KRK"/>
+                            <constraint firstItem="bPH-NU-bQf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="P2r-xM-hgp"/>
+                            <constraint firstItem="bPH-NU-bQf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ahb-eu-IbA"/>
+                            <constraint firstItem="bbA-aP-rKP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="cGW-ff-2kH"/>
+                            <constraint firstItem="frf-bl-1Qu" firstAttribute="height" secondItem="bbA-aP-rKP" secondAttribute="height" id="dv4-Qj-v6P"/>
+                            <constraint firstItem="frf-bl-1Qu" firstAttribute="width" secondItem="bbA-aP-rKP" secondAttribute="width" id="iJI-Vy-vjM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bbA-aP-rKP" secondAttribute="bottom" constant="50" id="iN9-MD-Xyo"/>
+                            <constraint firstItem="bbA-aP-rKP" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.45" id="szi-Qy-fMs"/>
+                            <constraint firstItem="frf-bl-1Qu" firstAttribute="leading" secondItem="bbA-aP-rKP" secondAttribute="trailing" priority="750" constant="5" id="wRy-W7-384"/>
+                            <constraint firstAttribute="trailing" secondItem="bPH-NU-bQf" secondAttribute="trailing" constant="16" id="xrb-61-lB0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageCollection" destination="bPH-NU-bQf" id="dNi-jQ-SjC"/>
+                        <outlet property="reloadButton" destination="bbA-aP-rKP" id="EKK-Ks-0FX"/>
+                        <outlet property="resetButton" destination="frf-bl-1Qu" id="KPw-W5-JY5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -17,6 +17,7 @@
 		DA732681146FB2BFC480E72275DC5511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E628FAA2B03932F67C50B82C66B9DF99 /* Pods-TSWebImageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8971EAF74B5E105370ED1B3A893171 /* Pods-TSWebImageView_Example-dummy.m */; };
 		F14B71E7261827C900B86176 /* TSWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B71E6261827C900B86176 /* TSWebImageView.swift */; };
+		F1BB5993261835B700EC817C /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB5992261835B700EC817C /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		ED54E1286D68B032B4FD9D02A8BE4574 /* Pods-TSWebImageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSWebImageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F0131393B5E2A05E8DCC0F0AF7E41E4D /* Pods-TSWebImageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSWebImageView_Tests.modulemap"; sourceTree = "<group>"; };
 		F14B71E6261827C900B86176 /* TSWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWebImageView.swift; sourceTree = "<group>"; };
+		F1BB5992261835B700EC817C /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		FB0F9956D6410C8505648F26F4EAE03A /* Pods-TSWebImageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSWebImageView_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,9 +229,18 @@
 		F14B71E42618279500B86176 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F1BB5991261835A600EC817C /* Utils */,
 				F14B71E6261827C900B86176 /* TSWebImageView.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		F1BB5991261835A600EC817C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB5992261835B700EC817C /* ImageProcessor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14B71E7261827C900B86176 /* TSWebImageView.swift in Sources */,
+				F1BB5993261835B700EC817C /* ImageProcessor.swift in Sources */,
 				5E56E102282A4F6947BB2829D22436CA /* TSWebImageView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

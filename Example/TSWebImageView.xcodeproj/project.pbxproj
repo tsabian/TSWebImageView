@@ -15,6 +15,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		F1BB59A426197AC000EC817C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB59A226197AC000EC817C /* ImageCollectionViewCell.swift */; };
+		F1BB59A526197AC000EC817C /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BB59A326197AC000EC817C /* ImageCollectionViewCell.xib */; };
+		F1BB59AB261983BF00EC817C /* ImageCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB59AA261983BF00EC817C /* ImageCollectionLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		7AFB11304AC0C466821AD292 /* Pods-TSWebImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWebImageView_Tests.release.xcconfig"; path = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B11D8162E5866249B1A68946 /* Pods-TSWebImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWebImageView_Example.release.xcconfig"; path = "Target Support Files/Pods-TSWebImageView_Example/Pods-TSWebImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E993A2D0E98EF002B85E9660 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F1BB59A226197AC000EC817C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1BB59A326197AC000EC817C /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		F1BB59AA261983BF00EC817C /* ImageCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionLayout.swift; sourceTree = "<group>"; };
 		F2F8D67B6A146B4A7942C638 /* Pods_TSWebImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSWebImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FF76CC18DBEBBC33B9ABB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F99F8E2F0F1B405EEA85218F /* Pods-TSWebImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TSWebImageView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				F1BB59AA261983BF00EC817C /* ImageCollectionLayout.swift */,
+				F1BB59A226197AC000EC817C /* ImageCollectionViewCell.swift */,
+				F1BB59A326197AC000EC817C /* ImageCollectionViewCell.xib */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -250,6 +259,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				F1BB59A526197AC000EC817C /* ImageCollectionViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1BB59A426197AC000EC817C /* ImageCollectionViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F1BB59AB261983BF00EC817C /* ImageCollectionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
