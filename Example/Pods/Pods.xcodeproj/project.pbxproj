@@ -13,10 +13,11 @@
 		81F41965E0E18799680BFC6CADDFB586 /* Pods-TSWebImageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A9C358D4BC3A2919C104BE792A372C /* Pods-TSWebImageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F264717A43A8D57D8E793835E820F26 /* TSWebImageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B66FEBD18025C90843017D5BFB5F5CD4 /* TSWebImageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F94D5E7B65766D15855DCFB4DB0342 /* Pods-TSWebImageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE23FCA6A125496DADF6BC60FA9A6D98 /* Pods-TSWebImageView_Tests-dummy.m */; };
-		A6A8240D9D968880488CA0980A41FAC4 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AB366E27A602B74FEC9E0D09742F7 /* ReplaceMe.swift */; };
 		B93F8675D9069DAD2EDBE3A932D0CD63 /* Pods-TSWebImageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D5636126AC06058CB37B0635C62C3F /* Pods-TSWebImageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA732681146FB2BFC480E72275DC5511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E628FAA2B03932F67C50B82C66B9DF99 /* Pods-TSWebImageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8971EAF74B5E105370ED1B3A893171 /* Pods-TSWebImageView_Example-dummy.m */; };
+		F14B71E7261827C900B86176 /* TSWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B71E6261827C900B86176 /* TSWebImageView.swift */; };
+		F1BB5993261835B700EC817C /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB5992261835B700EC817C /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,35 +41,36 @@
 		042DC9FDE2042F49179783E698CA57AE /* Pods-TSWebImageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSWebImageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		084482A5AE2775ECA161DABB7A8EB3CE /* TSWebImageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSWebImageView-dummy.m"; sourceTree = "<group>"; };
 		0A6E1C57BE1A710A5799790AFAAE59D5 /* TSWebImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSWebImageView.debug.xcconfig; sourceTree = "<group>"; };
-		0D035FC3A067EBF72256A1EDC543006C /* TSWebImageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TSWebImageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0D035FC3A067EBF72256A1EDC543006C /* TSWebImageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TSWebImageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E1737B83AF6F58A1823D707A7150228 /* Pods-TSWebImageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSWebImageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		106853E7FB5684F08B5B194FC78E3927 /* Pods-TSWebImageView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSWebImageView_Tests-Info.plist"; sourceTree = "<group>"; };
 		1E792688A19DCC944C5F646C5C27C626 /* Pods-TSWebImageView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSWebImageView_Example-Info.plist"; sourceTree = "<group>"; };
 		219EB7404338DC9F6C634FA44B89ADAE /* TSWebImageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSWebImageView-prefix.pch"; sourceTree = "<group>"; };
-		3C7AB366E27A602B74FEC9E0D09742F7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TSWebImageView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		6F0426D406405F0480778CCCDBE46164 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6F0426D406405F0480778CCCDBE46164 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		769A84E66AC3B9AC273D86F500BE1130 /* TSWebImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TSWebImageView.framework; path = TSWebImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		769A84E66AC3B9AC273D86F500BE1130 /* TSWebImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSWebImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D091E7CEA210C21D44C14CCD7BB7AA /* Pods-TSWebImageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSWebImageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		785D4D53F5E086B837A754644094A17A /* Pods-TSWebImageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TSWebImageView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		818C2A47F56C3B5237415C28F22CACAF /* Pods_TSWebImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSWebImageView_Tests.framework; path = "Pods-TSWebImageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		818C2A47F56C3B5237415C28F22CACAF /* Pods_TSWebImageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSWebImageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		821654B8C0E8543424749C2864D0F45C /* Pods-TSWebImageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSWebImageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		82A9C358D4BC3A2919C104BE792A372C /* Pods-TSWebImageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSWebImageView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8374D9F0A74A9148698C9BEA3F1DF934 /* TSWebImageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TSWebImageView-Info.plist"; sourceTree = "<group>"; };
 		85D5636126AC06058CB37B0635C62C3F /* Pods-TSWebImageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSWebImageView_Example-umbrella.h"; sourceTree = "<group>"; };
 		9A3DBE8D8CA26900F3AFD1300A24274A /* Pods-TSWebImageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSWebImageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9D8971EAF74B5E105370ED1B3A893171 /* Pods-TSWebImageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSWebImageView_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADB9A763119EE936D0C3603F66265D99 /* Pods_TSWebImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSWebImageView_Example.framework; path = "Pods-TSWebImageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADB9A763119EE936D0C3603F66265D99 /* Pods_TSWebImageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSWebImageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C31D37C0EB0EE9B20046DA9294CE56 /* TSWebImageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSWebImageView.modulemap; sourceTree = "<group>"; };
 		B66FEBD18025C90843017D5BFB5F5CD4 /* TSWebImageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSWebImageView-umbrella.h"; sourceTree = "<group>"; };
 		BB564712D4F9AB21D2A11B521BB6D623 /* TSWebImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSWebImageView.release.xcconfig; sourceTree = "<group>"; };
 		BE23FCA6A125496DADF6BC60FA9A6D98 /* Pods-TSWebImageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSWebImageView_Tests-dummy.m"; sourceTree = "<group>"; };
 		C3E5077EEE1F0B7B1ACA602403332AD9 /* Pods-TSWebImageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSWebImageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D502B9A2990123AF0DCB6D0D1F7C74EA /* Pods-TSWebImageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSWebImageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DBB97FDE41EAE53E4ECE6E05856715B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DBB97FDE41EAE53E4ECE6E05856715B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		ED54E1286D68B032B4FD9D02A8BE4574 /* Pods-TSWebImageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSWebImageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F0131393B5E2A05E8DCC0F0AF7E41E4D /* Pods-TSWebImageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSWebImageView_Tests.modulemap"; sourceTree = "<group>"; };
+		F14B71E6261827C900B86176 /* TSWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSWebImageView.swift; sourceTree = "<group>"; };
+		F1BB5992261835B700EC817C /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		FB0F9956D6410C8505648F26F4EAE03A /* Pods-TSWebImageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSWebImageView_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +123,7 @@
 				BB564712D4F9AB21D2A11B521BB6D623 /* TSWebImageView.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TSWebImageView";
+			path = "../Example/Pods/Target Support Files/TSWebImageView";
 			sourceTree = "<group>";
 		};
 		1E70F92EA7F93B734097E781E2993A2E /* Pod */ = {
@@ -132,6 +134,7 @@
 				0D035FC3A067EBF72256A1EDC543006C /* TSWebImageView.podspec */,
 			);
 			name = Pod;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1FA7AEFABBE143863A64D5187A1688C6 /* Development Pods */ = {
@@ -153,12 +156,12 @@
 		652BB1D02EE6EAB5D7C6634D88F8721E /* TSWebImageView */ = {
 			isa = PBXGroup;
 			children = (
-				3C7AB366E27A602B74FEC9E0D09742F7 /* ReplaceMe.swift */,
+				F14B71E42618279500B86176 /* Core */,
 				1E70F92EA7F93B734097E781E2993A2E /* Pod */,
 				15DD4B6D9D2EBCB1FC5F2DD4485FB7B1 /* Support Files */,
 			);
 			name = TSWebImageView;
-			path = ../..;
+			path = ../../TSWebImageView;
 			sourceTree = "<group>";
 		};
 		C2A1A2AF7F8F5295D7CFD98429BDD374 /* Pods-TSWebImageView_Tests */ = {
@@ -221,6 +224,23 @@
 			);
 			name = "Pods-TSWebImageView_Example";
 			path = "Target Support Files/Pods-TSWebImageView_Example";
+			sourceTree = "<group>";
+		};
+		F14B71E42618279500B86176 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB5991261835A600EC817C /* Utils */,
+				F14B71E6261827C900B86176 /* TSWebImageView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F1BB5991261835A600EC817C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB5992261835B700EC817C /* ImageProcessor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +336,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8FDF09CC6DE7A23E146D5E1D669E01ED = {
+						DevelopmentTeam = Z6MUH3V2QB;
+						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,7 +402,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A8240D9D968880488CA0980A41FAC4 /* ReplaceMe.swift in Sources */,
+				F14B71E7261827C900B86176 /* TSWebImageView.swift in Sources */,
+				F1BB5993261835B700EC817C /* ImageProcessor.swift in Sources */,
 				5E56E102282A4F6947BB2829D22436CA /* TSWebImageView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,18 +449,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TSWebImageView_Example/Pods-TSWebImageView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSWebImageView_Example/Pods-TSWebImageView_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.pods.tswebimageview.example;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -491,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -519,18 +548,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.pods.tswebimageview.tests;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -540,27 +570,34 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB564712D4F9AB21D2A11B521BB6D623 /* TSWebImageView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z6MUH3V2QB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/TSWebImageView/TSWebImageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TSWebImageView/TSWebImageView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TSWebImageView/TSWebImageView.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.tswebimageview;
 				PRODUCT_MODULE_NAME = TSWebImageView;
 				PRODUCT_NAME = TSWebImageView;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -582,18 +619,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSWebImageView_Tests/Pods-TSWebImageView_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.pods.tswebimageview.tests;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -615,18 +653,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-TSWebImageView_Example/Pods-TSWebImageView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TSWebImageView_Example/Pods-TSWebImageView_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.pods.tswebimageview.example;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -683,13 +722,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -699,27 +737,35 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A6E1C57BE1A710A5799790AFAAE59D5 /* TSWebImageView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z6MUH3V2QB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/TSWebImageView/TSWebImageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TSWebImageView/TSWebImageView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TSWebImageView/TSWebImageView.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitxlabs.tswebimageview;
 				PRODUCT_MODULE_NAME = TSWebImageView;
 				PRODUCT_NAME = TSWebImageView;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
