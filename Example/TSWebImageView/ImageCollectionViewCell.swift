@@ -15,9 +15,12 @@ class ImageCollectionViewCell: UICollectionViewCell {
         didSet {
             webImage.maxWidth = 200
             webImage.maxHeight = 200
+            webImage.hasSkeleton = true
+            webImage.contentMode = .scaleAspectFill
+            webImage.clipsToBounds = true
             webImage.layer.borderWidth = 1
             webImage.layer.borderColor = UIColor.lightGray.cgColor
-            webImage.layer.cornerRadius = 8
+            webImage.layer.cornerRadius = 4
         }
     }
 

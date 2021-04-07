@@ -19,6 +19,9 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PNZ-N2-SV5" customClass="TSWebImageView" customModule="TSWebImageView">
                         <rect key="frame" x="8" y="8" width="134" height="134"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasSkeleton" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                 </subviews>
             </view>

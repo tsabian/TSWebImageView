@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             imageCollection.showsVerticalScrollIndicator = false
             imageCollection.showsHorizontalScrollIndicator = false
             imageCollection.allowsSelection = false
-            imageCollection.collectionViewLayout = ImageCollectionLayout(size: CGSize(width: 150, height: 150))
+            imageCollection.collectionViewLayout = ImageCollectionLayout(size: CGSize(width: 84, height: 84))
             let cellNib = UINib(nibName: "ImageCollectionViewCell", bundle: .main)
             imageCollection.register(cellNib, forCellWithReuseIdentifier: "ImageCollectionViewCell")
         }
@@ -88,6 +88,11 @@ class ViewController: UIViewController {
         images.append(Image(index: 8, url: "https://image.shutterstock.com/image-photo/africa-elephant-zambezi-zambia-600w-1067727128.jpg"))
         images.append(Image(index: 9, url: "https://image.shutterstock.com/z/stock-photo-predator-s-love-lioness-and-cub-in-the-kruger-np-south-africa-1078246298.jpg"))
         images.append(Image(index: 10, url: "https://image.shutterstock.com/z/stock-photo-asiatic-lioness-walking-forward-in-hunting-pouse-1596359590.jpg"))
+        images.append(Image(index: 11, url: "https://g6comunicacaodotcom.files.wordpress.com/2019/06/peterhickmanssrace2.jpg"))
+        images.append(Image(index: 12, url: "https://www.unicesumar.edu.br/wp-content/uploads/2020/09/NASA-SPACE-APPS-e1601391131131.jpg"))
+        images.append(Image(index: 13, url: "https://wallpapercave.com/wp/we4uZJi.jpg"))
+        images.append(Image(index: 14, url: "https://wallpapercave.com/wp/wp6746661.jpg"))
+        images.append(Image(index: 15, url: "https://images2.alphacoders.com/974/974554.jpg"))
         // swiftlint:enabled line_length
     }
 }
