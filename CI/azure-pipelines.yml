@@ -16,7 +16,7 @@ steps:
     actions: 'build'
     configuration: 'Release'
     sdk: 'iphoneos'
-    xcWorkspacePath: '**/*.xcodeproj/_Pods.xcodeproj'
+    xcWorkspacePath: '*_Pods.xcodeproj'
     packageApp: false
 
 - task: PublishBuildArtifacts@1
