@@ -78,7 +78,7 @@ public final class TSWebImageView: UIImageView {
             start()
             if let imageCached = TSWebImageView[url] {
                 image = imageCached
-                self.stop()
+                stop()
             } else {
                 DispatchQueue.global().async {
                     if let imageData = try? Data(contentsOf: url), let downloaded = UIImage(data: imageData) {
