@@ -21,11 +21,9 @@ steps:
   displayName: 'Build framework'
   inputs:
     actions: 'build'
-    scheme: ''
-    sdk: 'iphoneos'
     configuration: 'Release'
-    xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
-    xcodeVersion: 'default' # Options: 8, 9, 10, 11, default, specifyPath
+    sdk: 'iphoneos'
+    xcWorkspacePath: '**/*.xcodeproj/_Pods.xcodeproj'
     packageApp: false
 
 - task: PublishBuildArtifacts@1
