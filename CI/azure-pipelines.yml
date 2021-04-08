@@ -10,13 +10,6 @@ pool:
   vmImage: 'macos-latest'
 
 steps:
-
-- task: CocoaPods@0
-  displayName: 'pod install'
-  inputs:
-    projectDirectory: '$(system.defaultWorkingDirectory)/Example'
-    forceRepoUpdate: true
-
 - task: Xcode@5 
   displayName: 'Build framework'
   inputs:
