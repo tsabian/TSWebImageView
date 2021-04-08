@@ -12,11 +12,13 @@ pool:
 steps:
 
 - task: CocoaPods@0
+  displayName: 'pod install'
   inputs:
+    projectDirectory: '$(system.defaultWorkingDirectory)'
     forceRepoUpdate: true
 
 - task: Xcode@5 
-  displayName: "Build framework"
+  displayName: 'Build framework'
   inputs:
     actions: 'build'
     scheme: ''
