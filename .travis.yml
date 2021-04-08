@@ -2,19 +2,20 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode12.2
-language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-
-xcode_workspace: Example/TSWebImageView.xcworkspace
-xcode_scheme: TSWebImageView-Example
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 
 before_install:
-- cd Example
-- pod install
+  - gem install cocoapods
 
-# script:
-# - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/TSWebImageView.xcworkspace -scheme TSWebImageView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-# - pod lib lint
+install:
+  - brew update && brew upgrade swiftlint
+  - pod install
+  
+language: swift
+osx_image: xcode12.2
+xcode_workspace: TSWebImageView.xcworkspace
+xcode_scheme: TSWebImageView-Example
+xcode_destination: platform=iOS Simulator,OS=14.6,name=iPhone 8
+
+script: 
+ - swiftlint
+ - xcodebuild test -workspace 'TSWebImageView.xcworkspace' -scheme 'TSWebImageView-Example' -destination 'platform=iOS Simulator,OS=13.6,name=iPhone 8'
