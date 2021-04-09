@@ -7,6 +7,7 @@ before_install:
 
 install:
   - brew update && brew upgrade swiftlint
+  - cd Example
   - pod install
   
 language: swift
@@ -18,7 +19,6 @@ xcode_destination: platform=iOS Simulator,OS=14.6,name=iPhone 8
 script: 
  - swiftlint
  - xcodebuild test -workspace 'TSWebImageView.xcworkspace' -scheme 'TSWebImageView-Example' -destination 'platform=iOS Simulator,OS=13.6,name=iPhone 8'
- - cd Example
  - pod lib lint
  - pod spec lint
  - pod register **ccpKey** **ccpValue**
