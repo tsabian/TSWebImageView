@@ -47,10 +47,7 @@ public final class TSWebImageView: UIImageView {
         super.init(coder: coder)
         setupSkeletonUI()
     }
-    
-    public override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+
 
     // MARK: - Inspectable
 
@@ -75,17 +72,17 @@ public final class TSWebImageView: UIImageView {
             guard let url = webURL else {
                 return
             }
-            start()
+            show()
             if let imageCached = TSWebImageView[url] {
                 image = imageCached
-                stop()
+                hide()
             } else {
                 DispatchQueue.global().async {
                     if let imageData = try? Data(contentsOf: url), let downloaded = UIImage(data: imageData) {
                         DispatchQueue.main.async {
                             self.image = self.prepare(originalImage: downloaded)
                             TSWebImageView[url] = self.image
-                            self.stop()
+                            self.hide()
                         }
                     }
                 }
@@ -119,18 +116,18 @@ public final class TSWebImageView: UIImageView {
         animation.fromValue = [-1.0, -0.5, 0.0]
         animation.toValue = [1.0, 1.5, 2.0]
         animation.repeatCount = .infinity
-        animation.duration = 0.9
+        animation.duration = 0.7
         animation.isRemovedOnCompletion = false
         gradientLayer.add(animation, forKey: animation.keyPath)
     }
     
-    func start() {
+    func show() {
         if hasSkeleton {
             layer.addSublayer(gradientLayer)
         }
     }
     
-    func stop() {
+    func hide() {
         layer.sublayers?.removeLast()
     }
 }
