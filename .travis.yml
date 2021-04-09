@@ -22,7 +22,7 @@ script:
  - cd Example
  - xcodebuild test -workspace 'TSWebImageView.xcworkspace' -scheme 'TSWebImageView-Example' -destination 'platform=iOS Simulator,OS=13.6,name=iPhone 8'
  - cd ..
- - pod lib lint
+ - pod lib lint --allow-warnings --skip-tests
  - pod spec lint
-# - pod trunk register $ccpKey $ccpValue
+ - pod trunk register $ccpKey $ccpValue
  - pod trunk push TSWebImageView.podspec
