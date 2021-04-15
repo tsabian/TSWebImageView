@@ -9,8 +9,8 @@ import UIKit
 
 public final class TSWebImageView: UIImageView {
 
-    private var gradientColorOne: CGColor = UIColor(white: 0.85, alpha: 1.0).cgColor
-    private var gradientColorTwo: CGColor = UIColor(white: 0.95, alpha: 1.0).cgColor
+    private var darkGrayGradient: CGColor = UIColor(white: 0.85, alpha: 1.0).cgColor
+    private var lightGrayGradient: CGColor = UIColor(white: 0.95, alpha: 1.0).cgColor
     private let gradientLayer = CAGradientLayer()
     
     // MARK: - Cache
@@ -103,15 +103,12 @@ public final class TSWebImageView: UIImageView {
     }
     
     private func setupSkeletonUI() {
-        // Gradient Layer
         gradientLayer.frame = self.bounds
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        gradientLayer.colors = [gradientColorOne, gradientColorTwo, gradientColorOne]
+        gradientLayer.colors = [darkGrayGradient, lightGrayGradient, darkGrayGradient]
         gradientLayer.locations = [0.0, 0.5, 1.0]
         layer.masksToBounds = true
-        
-        // CA Animation
         let animation = CABasicAnimation(keyPath: "locations")
         animation.fromValue = [-1.0, -0.5, 0.0]
         animation.toValue = [1.0, 1.5, 2.0]
