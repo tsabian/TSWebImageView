@@ -9,7 +9,7 @@ install:
   - brew update && brew upgrade swiftlint
   - cd Example
   - pod install
-  - pod trunk register $ccpKey $ccpValue
+#  - pod trunk register $ccpKey $ccpValue
   
 language: swift
 osx_image: xcode12.5
@@ -25,4 +25,4 @@ script:
  - cd ..
  - pod spec lint
  - pod lib lint --allow-warnings --skip-tests
- - pod trunk push TSWebImageView.podspec
+# - pod trunk push TSWebImageView.podspec
