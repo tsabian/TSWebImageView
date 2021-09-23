@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "TSWebImageView"
-  s.version               = "0.1.2"
+  s.version               = "0.1.3"
   s.summary               = "This library provider as simple async image downloader with cache support."
   
   s.description           = <<-DESC
