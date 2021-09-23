@@ -520,7 +520,7 @@
 			baseConfigurationReference = 37CFC8E62121B570E221076C /* Pods-TSWebImageView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
 				INFOPLIST_FILE = TSWebImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -539,7 +539,7 @@
 			baseConfigurationReference = B11D8162E5866249B1A68946 /* Pods-TSWebImageView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = Z6MUH3V2QB;
 				INFOPLIST_FILE = TSWebImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

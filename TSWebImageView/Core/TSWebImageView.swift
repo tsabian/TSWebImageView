@@ -12,11 +12,11 @@ public final class TSWebImageView: UIImageView {
     private var darkGrayGradient: CGColor = UIColor(white: 0.85, alpha: 1.0).cgColor
     private var lightGrayGradient: CGColor = UIColor(white: 0.95, alpha: 1.0).cgColor
     private let gradientLayer = CAGradientLayer()
-    
+
     // MARK: - Cache
 
     private static var ramImageCache = NSCache<NSURL, UIImage>()
-    
+
     public static subscript(url: URL) -> UIImage? {
         get {
             guard let currentURL = NSURL(string: url.absoluteString) else {
@@ -35,14 +35,14 @@ public final class TSWebImageView: UIImageView {
             }
         }
     }
-    
+
     // MARK: - Lifecycle
 
     override public init(frame: CGRect) {
         super.init(frame: frame)
         setupSkeletonUI()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupSkeletonUI()
@@ -63,7 +63,7 @@ public final class TSWebImageView: UIImageView {
             webURL = url
         }
     }
-    
+
     @IBInspectable public var hasSkeleton: Bool = false
 
     // MARK: - properties
@@ -89,7 +89,7 @@ public final class TSWebImageView: UIImageView {
             }
         }
     }
-     
+
     // MARK: - functions
     private func prepare(originalImage: UIImage) -> UIImage? {
         if originalImage.size.width > maxWidth || originalImage.size.height > maxHeight {
@@ -101,7 +101,7 @@ public final class TSWebImageView: UIImageView {
     public static func clearAllFromCache() {
         ramImageCache.removeAllObjects()
     }
-    
+
     private func setupSkeletonUI() {
         gradientLayer.frame = self.bounds
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
@@ -117,24 +117,22 @@ public final class TSWebImageView: UIImageView {
         animation.isRemovedOnCompletion = false
         gradientLayer.add(animation, forKey: animation.keyPath)
     }
-    
+
     func show() {
         if hasSkeleton {
             layer.addSublayer(gradientLayer)
         }
     }
-    
+
     func hide() {
         layer.sublayers?.removeLast()
     }
 }
 
 public extension TSWebImageView {
-    
     func clearFromCache() {
         if let currentURL = webURL {
             TSWebImageView[currentURL] = nil
         }
     }
-
 }

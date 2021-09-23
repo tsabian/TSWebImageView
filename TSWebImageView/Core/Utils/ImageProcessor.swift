@@ -8,11 +8,11 @@
 import Foundation
 
 final class ImageProcessor {
-    
+
     private init() { }
-    
+
     static var shared = ImageProcessor()
-    
+
     func resize(image: UIImage, width: CGFloat, height: CGFloat) -> UIImage? {
         let originalWidth = image.size.width
         let aspectRatio = originalWidth / image.size.height
@@ -28,7 +28,7 @@ final class ImageProcessor {
         UIGraphicsEndImageContext()
         return smallImage
     }
-    
+
     func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
         let cgImage = image.cgImage!
         let contextImage = UIImage(cgImage: cgImage)
@@ -53,5 +53,4 @@ final class ImageProcessor {
         let image = UIImage(cgImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
         return image
     }
-    
 }
